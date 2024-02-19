@@ -24,7 +24,7 @@ Function CloseDb()
     End If
     If Me.rs <> Nothing Then
         Me.rs.Close
-        Me.conn = Nothing
+        Me.rs = Nothing
     End If
     If Me.strConn <> "" Then
         Me.strConn = ""
